@@ -1,4 +1,4 @@
-const catMe=require('cat-me')
+// const catMe=require('cat-me')
 // console.log(catMe())
 
 // const http = require('http')
@@ -16,18 +16,18 @@ const catMe=require('cat-me')
 // })
 
 const express = require('express');
-
 const app = express();
+const morgon = require('morgan')
 app.set('view engine','ejs');
 app.use((req,res,next)=>{
      console.log("This Is Middleware");
      // bass hum return karate hai next 
      // build in 
      // custom 
-     // 3part middleware
-     
+     // 3party middleware
      next();
 })
+app.use(morgon())
 
 app.get('/',(req,res)=>{
     res.render('index')
