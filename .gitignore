@@ -14,3 +14,8 @@
 // WriteFile
 // readFile
 // readdir  ---> dirent ek data structure hai jo file ka data type batata hai
+// unlink ---> kisi bhi file ko delete kar sakta hai
+// fs.rmdir ---> kisi bhi folder ko delete kar sakta hai ---> sirf dekete tab karta hai
+            ----> Jab Folder Khali ho ---> ek optional paramter dene ke baad mein-->
+            {recursive:true} iske baad kar sakte hai --->
+// http 
