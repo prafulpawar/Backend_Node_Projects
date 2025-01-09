@@ -13,6 +13,4 @@
 
 // WriteFile
 // readFile
-
-
-
+// readdir  ---> dirent ek data structure hai jo file ka data type batata hai
