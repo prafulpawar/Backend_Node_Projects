@@ -38,11 +38,3 @@
 // })
 
 
-// const fs = require('fs');
-// fs.mkdir('its-abcd',function(err){
-//     if(err ) console.log(err.message);
-//     else console.log('Created directory')
-// })
-
-
-
