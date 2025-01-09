@@ -15,24 +15,34 @@
 //     console.log('Server is running on port 3000')  // Server started successfully on port 3000
 // })
 
-const express = require('express');
-const app = express();
-const morgon = require('morgan')
-app.set('view engine','ejs');
-app.use((req,res,next)=>{
-     console.log("This Is Middleware");
-     // bass hum return karate hai next 
-     // build in 
-     // custom 
-     // 3party middleware
-     next();
-})
-app.use(morgon())
+// const express = require('express');
+// const app = express();
+// const morgon = require('morgan')
+// app.set('view engine','ejs');
+// app.use((req,res,next)=>{
+//      console.log("This Is Middleware");
+//      // bass hum return karate hai next 
+//      // build in 
+//      // custom 
+//      // 3party middleware
+//      next();
+// })
+// app.use(morgon())
 
-app.get('/',(req,res)=>{
-    res.render('index')
-})
+// app.get('/',(req,res)=>{
+//     res.render('index')
+// })
 
-app.listen(3000,()=>{
-    console.log('Server is running on port 3000') // Server started successfully on port 3000
-})
+// app.listen(3000,()=>{
+//     console.log('Server is running on port 3000') // Server started successfully on port 3000
+// })
+
+
+// const fs = require('fs');
+// fs.mkdir('its-abcd',function(err){
+//     if(err ) console.log(err.message);
+//     else console.log('Created directory')
+// })
+
+
+
