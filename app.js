@@ -2,10 +2,13 @@ const express = require('express');
 const app = express();
 const PORT = 3000 
 
+
+app.set('view engine','ejs')
 app.get('/',(req,res)=>{
-    res.send('Hello, World!!!')
+    res.render('index')
 })
+
+
 app.listen(PORT,(req,res)=>{
     console.log(`Server Running On Port ${PORT}`);
 })
-
