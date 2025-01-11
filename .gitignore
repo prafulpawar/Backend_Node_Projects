@@ -121,10 +121,10 @@ form ka data jis naam se input me likha ho usi naam se backend me jayenga hum is
 kar rahe hai ----> type="name" 
 
 ek form banao-->/ par or contact end point rakho /create 
--> form submit karne par url me data check karo
---> backend par route banao
---->data query mein jata hai or vo req.query mein milta hai method get hota hai
----->data req.body mein milta hai jab vo method  post se jata hai --> data block hota hai
+->    form submit karne par url me data check karo
+-->   backend par route banao
+--->  data query mein jata hai or vo req.query mein milta hai method get hota hai
+----> data req.body mein milta hai jab vo method  post se jata hai --> data block hota hai
 data reable nhi hota h or technically data headers me hota h or use body mein lana padhta hai
   to ab uske liye ek middleware banao  ---->
      express.urlencoded({extended:true}) -----> header se data nikal lenga  or body mein daal denga
