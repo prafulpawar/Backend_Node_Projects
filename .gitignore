@@ -80,3 +80,37 @@ server.listen(3000,()=>{
 
     console.log(`Server Is Runnning On Port ${3000}`)
 })
+
+
+learn about that send vs end 
+send---->  json
+end -----> Ends response with plain text
+
+Key Differences ------------> SEND VS END
+Feature	            res.send()	                       res.end()
+Framework	        Express	                           Core HTTP
+Sets Content-Type	Yes	                               No
+Data Conversion	    Yes, for objects (to JSON)	       No
+Ends Response	    Yes, implicitly	Yes,               explicitly
+Ease of Use      	High	                           Requires manual handling
+
+res.render() is a method used to render template files and send the rendered 
+HTML as a response to the client. This is commonly used in server-side rendering (SSR) applications.
+
+express.static --> express ko batana padhta hai ki static files ka hai ---> static file aise hoti h chnage nhi hoti h jaise
+ejs chnage ho jati h par css nahi chnage hongi na
+---> now ab folder ka naam public rakho aur use path se jodo (path.join(__dirname,public)) ---> nodejs ne inbuilt next() likha hai to
+fir in logo ne next banaya h 
+
+res.send()
+res.render() ---> npm i ejs , and npm init -y ye dono cheeze honi chahiye
+how can we create pacage json by using  file npm init -y
+
+app.use ---> har baar chalta hai jab bhi koi route hit honga
+us se pahle app.use chalta hai 
+app.use((req,res,next)=>{
+    console.log("World ")
+    next()
+})
+aur yaha par 3 cheeze aati h agar hum console.log kare to fir aage res nahi jayenga to hum
+next ko call karennge
