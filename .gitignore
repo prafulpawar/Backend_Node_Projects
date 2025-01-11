@@ -131,17 +131,18 @@ data reable nhi hota h or technically data headers me hota h or use body mein la
 
 
 
-Aspect	                   GET                                                                                       POST
-Purpose	             Used to retrieve data from a server.	                                                         Used to send data to a server to create or update resources.
-Data Transmission	 Appends data to the URL as query parameters (e.g., ?key=value).	                             Sends data in the request body, hidden from the URL.
-Visibility	         Data is visible in the URL.                                                                     Data is not visible in the URL.
-Security	         Less secure as data is exposed in the URL.                                        	             More secure as data is sent in the body.
-Caching	             Can be cached by browsers.                                                                	     Typically not cached.
-Bookmarking	         Data in the URL allows bookmarking.	                                                         Cannot bookmark as data is in the body.
-Data Length	         Limited data size due to URL length restrictions.	                                             Can send large amounts of data.
-Use Case	         - Fetching resources like HTML, images, etc.
-                     - Uploading files.                                                                              - Submitting forms (e.g., login, registration).
-                                                                                                                     - Queries (e.g., search results).	
+Aspect	                        GET                                                                                       POST
+|------------------|------------------------------------------------------------------------|----------------------------------------------------------------|
+|Purpose	       |   Used to retrieve data from a server.	                                |   Used to send data to a server to create or update resources. | 
+|Data Transmission |   Appends data to the URL as query parameters (e.g., ?key=value).      |	 Sends data in the request body, hidden from the URL.        | 
+|Visibility	       |   Data is visible in the URL.                                          |    Data is not visible in the URL.                             |
+|Security	       |   Less secure as data is exposed in the URL.                           |    More secure as data is sent in the body.                    |
+|Caching	       |   Can be cached by browsers.                                           |    Typically not cached.                                       |
+|Bookmarking	   |   Data in the URL allows bookmarking.	                                |   Cannot bookmark as data is in the body.                      |
+|Data Length	   |   Limited data size due to URL length restrictions.	                |   Can send large amounts of data.                              |
+|Use Case	       |   - Fetching resources like HTML, images, etc.                         |                                                                |
+|                  |   - Uploading files.                                                   |    - Submitting forms (e.g., login, registration).             |
+|------------------|------------------------------------------------------------------------|----------------------------------------------------------------|                                                                                         - Queries (e.g., search results).	
                      
 
 Key Considerations:
