@@ -1,3 +1,5 @@
+Day 1:->
+-----------------------------------------------------------------------------------------------------------------------
 // package 
 //  downloaded from npm 
 //  and modules from node js
@@ -80,7 +82,9 @@ server.listen(3000,()=>{
 
     console.log(`Server Is Runnning On Port ${3000}`)
 })
-
+----------------------------------------------------------------------------------------------------------------------
+Day 2:->
+----------------------------------------------------------------------------------------------------------------------
 
 learn about that send vs end 
 send---->  json
@@ -157,3 +161,6 @@ You need to send sensitive or large data.
 The operation involves creating, updating, or deleting resources.
 You need a secure and non-cached data transmission.
 Both methods are part of the HTTP protocol and serve distinct purposes in web communication.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Day 3 :->
