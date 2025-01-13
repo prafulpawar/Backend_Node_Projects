@@ -164,6 +164,19 @@ Both methods are part of the HTTP protocol and serve distinct purposes in web co
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Day 3 :->
-intial setup --> to do npm init
+initial setup --> to do npm init
 main file in pacage.json also called as entry point of server. it can be index.js app.js server.js
+
 npm i express to install express 
+to start basic server app.listen(()=>{}) it takes one call-back function 
+
+wildcard routes hum create taki user ho sakata hai kisi url par click kar de ya 
+edit kar de jo url exist nahi karta hai  
+
+to set view engine
+npm i ejs
+app.set('view engine','ejs') aur ye ek default folder assume karke rakhta hai jaise ki ek views naam ka folder
+honga aur ksi bhi ejs file ko show karne ke liye hum render ka use karte hai 
+maintain the wild card route like app.get('*',(req,res)=>{}) 
+
+data hum kaise pahuchayenge view engine tak 

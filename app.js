@@ -23,6 +23,10 @@ app.post('/create',(req,res)=>{
     res.send("abcd")
 })
 
+app.get('*',(req,res)=>{
+    res.render('wildcard')
+})
+
 
 app.listen(PORT,(req,res)=>{
     console.log(`Server Running On Port ${PORT}`);
