@@ -135,7 +135,7 @@ data reable nhi hota h or technically data headers me hota h or use body mein la
 
 
 
-Aspect	                        GET                                                                                       POST
+     Aspect	                                     GET                                                                            POST
 |------------------|------------------------------------------------------------------------|----------------------------------------------------------------|
 |Purpose	       |   Used to retrieve data from a server.	                                |   Used to send data to a server to create or update resources. | 
 |Data Transmission |   Appends data to the URL as query parameters (e.g., ?key=value).      |	 Sends data in the request body, hidden from the URL.        | 
@@ -144,8 +144,8 @@ Aspect	                        GET                                              
 |Caching	       |   Can be cached by browsers.                                           |    Typically not cached.                                       |
 |Bookmarking	   |   Data in the URL allows bookmarking.	                                |   Cannot bookmark as data is in the body.                      |
 |Data Length	   |   Limited data size due to URL length restrictions.	                |   Can send large amounts of data.                              |
-|Use Case	       |   - Fetching resources like HTML, images, etc.                         |                                                                |
-|                  |   - Uploading files.                                                   |    - Submitting forms (e.g., login, registration).             |
+|Use Case	       |   - Fetching resources like HTML, images, etc.                         |    - Uploading files.                                          |
+|                  |                                                                        |    - Submitting forms (e.g., login, registration).             |
 |------------------|------------------------------------------------------------------------|----------------------------------------------------------------|                                                                                         - Queries (e.g., search results).	
                      
 
