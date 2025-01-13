@@ -11,7 +11,26 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.json());
 
 app.get('/',(req,res)=>{
-    res.render('index')
+   
+    const formattedDate = new Date().toLocaleString();
+
+    console.log(formattedDate)
+     const formatted=[
+        {
+            name:'a',
+            email: 'a@gmail.com'
+        },
+        {
+            name:'b',
+            email: 'b@gmail.com'
+        },
+
+     ]
+     
+    res.render('index',{
+        formattedDate: formattedDate,
+        data: formatted
+    })
     
 })
 app.get('/create', (req, res) => {

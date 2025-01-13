@@ -18,5 +18,14 @@
         <input type="submit">
     </form>
 
+  <%= formattedDate %>
+  <br>
+
+  <% data.forEach((item)=>{%>
+         <%=item.name%> :   <%=item.email%>
+        
+         <br>
+  <%}) %>
+
 </body>
 </html>

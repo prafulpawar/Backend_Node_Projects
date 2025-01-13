@@ -179,4 +179,20 @@ app.set('view engine','ejs') aur ye ek default folder assume karke rakhta hai ja
 honga aur ksi bhi ejs file ko show karne ke liye hum render ka use karte hai 
 maintain the wild card route like app.get('*',(req,res)=>{}) 
 
-data hum kaise pahuchayenge view engine tak 
+data hum kaise pahuchayenge view engine tak
+render render function andar ek paramenter de sakte hai aur hamko render ka call backpadhna hai
+steing --> konsi file aapko render karni h 
+options ---> index files se main file tak data pahuchane ke liye 
+use angular bracket me likhenge {%=  %} isme data aayenga 
+
+arr of object ke liye hum use karenge <% data.forEach((item)=>{%>
+   yaha par data aayenga
+<%})  %>
+  function ka scope badhenga multiple lines mein 
+<%= %> ye expression use hota hai cheeze dikhane ke liye
+
+how can we connect the static files with the server
+now for that we must use the path so import it from node js
+like this 
+import path from 'path'
+app.use(express.static(path.join(__dirname,'public')))--> it will be use not set 
