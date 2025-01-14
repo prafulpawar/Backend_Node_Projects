@@ -203,5 +203,15 @@ link css/images
 ------------------------------------------------------------------------------------------------------------------------------------------------
 Day:-> 4
 Now Move On To MVC Based Arct
-controller --> or handler we can say the 
+npm init -y 
+server.js ---> entry point
+app.js ---> express ko config karte hai {middlewars,routes}
+controllers --> or handler we can say the 
 controller and routes exists  are in diffrenct files
+routes --->
+*/ 
+   /users --> Everthing About 
+   /products
+   /posts
+   
+*/
