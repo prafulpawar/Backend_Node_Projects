@@ -1,5 +1,5 @@
 Day 1:->
------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // package 
 //  downloaded from npm 
 //  and modules from node js
@@ -196,3 +196,6 @@ now for that we must use the path so import it from node js
 like this 
 import path from 'path'
 app.use(express.static(path.join(__dirname,'public')))--> it will be use not set 
+app.use express.static
+create public folder
+link css/images
